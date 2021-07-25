@@ -25,4 +25,8 @@ func main() {
 
 	weight, _ := strconv.ParseFloat(weightInput, 64)
 	height, _ := strconv.ParseFloat(heightInput, 64)
+
+	bmi := weight / (height * height)
+
+	fmt.Printf("Your BMI: %.2f", bmi)
 }
